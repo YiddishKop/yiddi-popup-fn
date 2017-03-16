@@ -1,4 +1,4 @@
-;;; yiddi-popup-fn.el --- Pop footnotes for Emacs' org-mode
+;;; popup-fn.el --- Pop footnotes for Emacs' org-mode
 
 ;; Copyright © 2017 yiddishkop
 
@@ -31,14 +31,15 @@
 (require 'popup)
 (eval-when-compile (require 'names))
 
-(defgroup yiddi-popup-fn nil
+(defgroup popup-fn nil
   "Pop footnotes for Emacs' org-mode."
-  :prefix "yiddi/"
+  :prefix "popup-fn-"
   :group 'tools
   :link '(url-link :tag "Github" "https://github.com/YiddishKop/yiddi-popup-fn.git/yiddi-pop-fn.el"))
 
 ;;;###autoload
-(define-namespace yiddi/
+(define-namespace popup-fn-
+
 (defcustom buffer-name "*Popup-Fn*"
   "Result Buffer name."
   :type 'string)
@@ -52,16 +53,16 @@
   )
 
 :autoload
-(defun search-at-point ()
+(defun display-def ()
   "Search word at point and display result with popup-tip."
   (interactive)
   (if (org-footnote-at-reference-p)
       (popup-tip (nth 3 (org-footnote-get-definition)))
-      (message "Nothing to look up")))
+      (message "No definition to display")))
 )
 
 
-(provide 'yiddi-popup-fn)
+(provide 'popup-fn)
 
 ;; Local Variables:
 ;; coding: utf-8
