@@ -3,9 +3,9 @@
 ;; Copyright © 2017 yiddishkop
 
 ;; Author: yiddishkop <yiddishkop@gmail.com>
-;; URL: TODO
-;; Package-Version: 20170226.49
-;; Package-Requires: ((popup "0.5.0") (org-mode TODO))
+;; URL: https://github.com/YiddishKop/yiddi-popup-fn
+;; Package-Version: 20170316.01
+;; Package-Requires: ((popup "0.5.0") (org-mode "9.05"))
 ;; Version: 0.1
 ;; Created: 16 Mar 2017
 ;; Keywords: footnotes popup
@@ -24,25 +24,6 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary: TODO
-;;
-;; A simple Youdao Dictionary interface for Emacs
-;; TODO
-;; Below are commands you can use:
-;; `youdao-dictionary-search-at-point'
-;; Search word at point and display result with buffer
-;; `youdao-dictionary-search-at-point+'
-;; Search word at point and display result with popup-tip
-;; `youdao-dictionary-search-from-input'
-;; Search word from input and display result with buffer
-;; `youdao-dictionary-search-and-replace'
-;; Search word at point and display result with popup-menu, replace word with
-;; selected translation.
-;; `youdao-dictionary-play-voice-at-point'
-;; Play voice of word at point (by [[https://github.com/snyh][@snyh]])
-;; `youdao-dictionary-play-voice-from-input'
-;; Play voice of word from input (by [[https://github.com/snyh][@snyh]])
-;; `youdao-dictionary-search-at-point-tooltip'
-;; Search word at point and display result with pos-tip
 
 ;;; Code:
 (require 'org)
